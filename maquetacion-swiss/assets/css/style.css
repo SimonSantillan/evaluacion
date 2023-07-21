@@ -134,7 +134,9 @@
   align-items: center;
   justify-content: space-between;
   font-size: 20px;
-  margin-bottom: 36px;
+  border-bottom: 1.4px solid #f2f2f7;
+  padding-bottom: 12px ;
+  margin-bottom: 24px;
 }
 .content-tech > section {
   flex: 1;
@@ -212,7 +214,8 @@
     gap: 32px;
   }
   .content-tech h2 {
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
   .content-tech > section p {
    margin-bottom: 10px;
