@@ -13,24 +13,43 @@ function anagram(string1,string2) {
     let palabra2 = string2;
 
 
-    let nuevaPalabra2 = "";
-    for(let i = (palabra2.length-1); i >= 0; i--) {
-        nuevaPalabra2+= palabra2[i];
-    }
-    if (palabra1===nuevaPalabra2) {
-        return true;
+    let sonIguales = 0;
+    if (palabra1.length === palabra2.length) {
+        for (let i = 0; i < palabra1.length; i++) {
+            for (let j = 0; j < palabra2.length; j++) {
+                if(palabra1[i]===palabra2[j]) {
+                    sonIguales++
+                    console.log(palabra1[i], palabra2[j])
+                    break;
+                }
+            }
+        }
+        if(sonIguales===palabra1.length) {
+            return true
+        } else {
+            return false
+        }
     } else {
-        return false;
+        return 'Las palabras ingresadas no tienen la misma longitud';
     }
+    
+
+    
 }
 
  console.log(anagram('pepe','epep'));
- console.log(anagram('simon','nomis'));
+ console.log(anagram('pepe','epepe'));
+ console.log(anagram('pepeq','epepe'));
+ console.log(anagram('simon','noims'), 'probando');
  console.log(anagram('simone','simon'));
- console.log(anagram('qondae','simon'));
+ console.log(anagram('qonda','simon'), 'que pasa aca');
  console.log(anagram('n','n'));
  console.log(anagram('no','no'));
  console.log(anagram('no','on'));
+ console.log(anagram('oso','ono'));
+ console.log(anagram('oso','oso'));
+ console.log(anagram('murcielago','murcielago'));
+ console.log(anagram('murcielago','rumciegola'));
 /*
 [11:05] Ana Minissale
 
