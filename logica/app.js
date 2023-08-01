@@ -36,20 +36,16 @@ function anagram(string1,string2) {
 
     
 }
-
- console.log(anagram('pepe','epep'));
- console.log(anagram('pepe','epepe'));
- console.log(anagram('pepeq','epepe'));
- console.log(anagram('simon','noims'), 'probando');
- console.log(anagram('simone','simon'));
- console.log(anagram('qonda','simon'), 'que pasa aca');
- console.log(anagram('n','n'));
- console.log(anagram('no','no'));
- console.log(anagram('no','on'));
- console.log(anagram('oso','ono'));
- console.log(anagram('oso','oso'));
- console.log(anagram('murcielago','murcielago'));
- console.log(anagram('murcielago','rumciegola'));
+/* Cumple que el primer string es un anagrama del segundo */
+ console.log(anagram('pepe','pepe'));
+ console.log(anagram('pepq','pepe'));
+ console.log(anagram('rumcieloga','murcielago'));
+ console.log(anagram('nomis','simon'));
+ console.log(anagram('nomiq','simon'));
+ console.log(anagram('casq','casa'));
+ console.log(anagram('casco','casa'));
+ console.log(anagram('cosac','casco'));
+ console.log(anagram('conrecoer','reconocer'));
 /*
 [11:05] Ana Minissale
 
